@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPT Pro — Sondagem de solo SPT</title>
+  <meta name="description" content="SPT Pro conecta quem precisa de sondagem de solo SPT a empresas habilitadas: pedido pelo mapa, propostas, pagamento e entrega da ART num só app.">
+  <meta name="theme-color" content="#BC6C25">
+  <meta property="og:title" content="SPT Pro">
+  <meta property="og:description" content="Sondagem de solo, do pedido ao laudo, num só app.">
+  <meta property="og:image" content="assets/icon.png">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@500;600;700&family=Radio+Canada:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo" viewBox="0 0 1024 1024">
+      <rect width="1024" height="1024" fill="#BC6C25"/>
+      <path fill="#FFF1E7" d="M551 243 L196 667 L498 378 L392 780 L487 535 L556 344 L667 493 L827 722 Z"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></g></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15L6 16zM10 20.5a2 2 0 0 0 4 0"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><svg aria-hidden="true"><use href="#logo"/></svg>SPT Pro</a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#prestadores">Prestadores</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+    <a class="btn btn-fill" href="#contato">Fale conosco</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Marketplace de sondagem SPT</span>
+        <h1>Sondagem de solo, do pedido <em>ao laudo</em>, num só app.</h1>
+        <p class="lead">O SPT Pro conecta quem precisa de um ensaio SPT a empresas de sondagem habilitadas. O cliente marca o terreno no mapa, recebe propostas, paga pelo app e acompanha a execução até a entrega da ART.</p>
+        <div class="actions">
+          <a class="btn btn-fill" href="#como-funciona">Ver como funciona</a>
+          <a class="btn btn-outline" href="#prestadores">Sou empresa de sondagem</a>
+        </div>
+        <div class="facts">
+          <div><b>1–12</b><span>furos por pedido</span></div>
+          <div><b class="mono">10,45–50 m</b><span>profundidade por furo</span></div>
+          <div><b>200 km</b><span>raio de busca do prestador</span></div>
+          <div><b>12x</b><span>parcelamento no cartão</span></div>
+        </div>
+      </div>
+
+      <figure class="log" style="margin:0">
+        <div class="log-head"><strong>Boletim de sondagem · SP-01</strong><span>NBR 6484</span></div>
+        <svg viewBox="0 0 380 432" role="img" aria-labelledby="logt">
+          <title id="logt">Perfil de sondagem SPT ilustrativo: quatro camadas de solo até 10,45 metros e número de golpes N-SPT crescendo de 2 a 24 com a profundidade.</title>
+          <!-- cabeçalhos -->
+          <text x="40" y="14" font-size="10" text-anchor="end" style="fill:var(--muted)">Prof. (m)</text>
+          <text x="125" y="14" font-size="10" text-anchor="middle" style="fill:var(--muted)">Perfil</text>
+          <text x="285" y="14" font-size="10" text-anchor="middle" style="fill:var(--muted)">N-SPT (golpes/30 cm)</text>
+          <!-- escala N -->
+          <g font-size="9.5" text-anchor="middle" style="fill:var(--faint)">
+            <text x="220" y="33">0</text><text x="263.3" y="33">10</text><text x="306.7" y="33">20</text><text x="350" y="33">30</text>
+          </g>
+          <g style="stroke:var(--line)" stroke-width="1">
+            <line x1="220" y1="40" x2="220" y2="400"/><line x1="263.3" y1="40" x2="263.3" y2="400"/>
+            <line x1="306.7" y1="40" x2="306.7" y2="400"/><line x1="350" y1="40" x2="350" y2="400"/>
+            <line x1="220" y1="108.9" x2="350" y2="108.9"/><line x1="220" y1="177.8" x2="350" y2="177.8"/>
+            <line x1="220" y1="246.7" x2="350" y2="246.7"/><line x1="220" y1="315.6" x2="350" y2="315.6"/>
+            <line x1="220" y1="384.5" x2="350" y2="384.5"/>
+          </g>
+          <!-- camadas: y = 40 + prof × 34,45 -->
+          <rect x="50" y="40" width="150" height="41.3" style="fill:var(--soil-1)"/>
+          <rect x="50" y="81.3" width="150" height="89.6" style="fill:var(--soil-2)"/>
+          <rect x="50" y="170.9" width="150" height="93" style="fill:var(--soil-3)"/>
+          <rect x="50" y="263.9" width="150" height="136.1" style="fill:var(--soil-4)"/>
+          <g font-size="10.5" text-anchor="middle" style="fill:var(--soil-ink)">
+            <text x="125" y="64">Aterro</text>
+            <text x="125" y="122">Argila siltosa</text><text x="125" y="135">mole</text>
+            <text x="125" y="213">Areia fina</text><text x="125" y="226">pouco compacta</text>
+            <text x="125" y="328">Silte arenoso</text><text x="125" y="341">compacto</text>
+          </g>
+          <!-- escala de profundidade -->
+          <g font-size="9.5" text-anchor="end" style="fill:var(--faint)">
+            <text x="42" y="43">0</text><text x="42" y="112">2</text><text x="42" y="181">4</text>
+            <text x="42" y="250">6</text><text x="42" y="319">8</text><text x="42" y="388">10</text>
+          </g>
+          <g style="stroke:var(--faint)" stroke-width="1">
+            <line x1="45" y1="40" x2="50" y2="40"/><line x1="45" y1="108.9" x2="50" y2="108.9"/><line x1="45" y1="177.8" x2="50" y2="177.8"/>
+            <line x1="45" y1="246.7" x2="50" y2="246.7"/><line x1="45" y1="315.6" x2="50" y2="315.6"/><line x1="45" y1="384.5" x2="50" y2="384.5"/>
+          </g>
+          <!-- fim do furo -->
+          <line x1="50" y1="400" x2="350" y2="400" style="stroke:var(--accent)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="350" y="420" font-size="10.5" text-anchor="end" style="fill:var(--accent)">Fim do furo · 10,45 m</text>
+          <!-- curva N-SPT: x = 220 + N × 4,333 -->
+          <polyline class="npath" fill="none" style="stroke:var(--accent)" stroke-width="2.2" stroke-linejoin="round"
+            points="228.7,74.45 233,108.9 233,143.35 241.7,177.8 254.7,212.25 263.3,246.7 276.3,281.15 289.3,315.6 302.3,350.05 324,384.5"/>
+          <g style="fill:var(--bg);stroke:var(--accent)" stroke-width="2">
+            <circle cx="228.7" cy="74.45" r="3.5"/><circle cx="233" cy="108.9" r="3.5"/><circle cx="233" cy="143.35" r="3.5"/>
+            <circle cx="241.7" cy="177.8" r="3.5"/><circle cx="254.7" cy="212.25" r="3.5"/><circle cx="263.3" cy="246.7" r="3.5"/>
+            <circle cx="276.3" cy="281.15" r="3.5"/><circle cx="289.3" cy="315.6" r="3.5"/><circle cx="302.3" cy="350.05" r="3.5"/>
+          </g>
+          <circle cx="324" cy="384.5" r="5" style="fill:var(--accent)"/>
+          <g font-size="9.5" style="fill:var(--muted)">
+            <text x="236" y="78">2</text><text x="240" y="113">3</text><text x="240" y="147">3</text><text x="249" y="182">5</text>
+            <text x="262" y="216">8</text><text x="270" y="251">10</text><text x="283" y="285">13</text><text x="296" y="320">16</text>
+            <text x="309" y="354">19</text>
+          </g>
+          <text x="332" y="380" font-size="11" font-weight="500" style="fill:var(--accent)">24</text>
+        </svg>
+        <figcaption class="cap">Perfil ilustrativo. No app, o cliente informa a quantidade de furos e a profundidade de cada um.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band alt" aria-labelledby="papeis">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Dois lados, um mesmo pedido</span>
+        <h2 id="papeis">Feito para quem contrata e para quem executa a sondagem</h2>
+      </div>
+      <div class="roles">
+        <article class="role client">
+          <span class="tag">Cliente</span>
+          <h3>Construtoras, engenheiros e donos de obra</h3>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Marca o terreno no mapa ou usa a localização atual</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Vê uma estimativa de custo antes de enviar o pedido</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Compara propostas de várias empresas e escolhe uma</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Paga no cartão em até 12 vezes, sem sair do app</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Acompanha o status e recebe a ART ao final</li>
+          </ul>
+        </article>
+        <article class="role company">
+          <span class="tag">Prestador</span>
+          <h3>Empresas de sondagem habilitadas</h3>
+          <ul>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Encontra pedidos num raio de 200 km da equipe</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Envia proposta escolhendo sub-equipe, data e horário</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Recebe os pagamentos direto na conta via Stripe Connect</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Organiza funcionários e sub-equipes no próprio app</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Acompanha receita líquida e serviços por estado no painel</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="como-funciona" aria-labelledby="h-how">
+    <div class="wrap how">
+      <div>
+        <div class="sec-head">
+          <span class="eyebrow">Para o cliente</span>
+          <h2 id="h-how">Solicitar uma sondagem leva seis telas</h2>
+          <p class="lead">O assistente coleta o que a empresa precisa saber para orçar o serviço com precisão.</p>
+        </div>
+        <ol class="steps">
+          <li><div><h3>Local</h3><p>Busque a cidade, ajuste o pino no mapa ou toque em "Usar localização atual".</p></div></li>
+          <li><div><h3>Endereço</h3><p>O endereço é preenchido a partir do ponto marcado. Confira CEP, rua e número e adicione um ponto de referência.</p></div></li>
+          <li><div><h3>Data e horário</h3><p>Escolha quando a equipe deve chegar.</p><div class="chips"><span class="chip">a partir de 7 dias</span><span class="chip">05h às 22h</span></div></div></li>
+          <li><div><h3>Condições do terreno</h3><p>Responda sim ou não para quatro perguntas que mudam o orçamento.</p><div class="chips"><span class="chip">acesso à água</span><span class="chip">solo natural</span><span class="chip">quebra de piso</span><span class="chip">acesso de veículo</span></div></div></li>
+          <li><div><h3>Furos</h3><p>Informe quantos furos e a profundidade de cada grupo. Anexe o KMZ, DWG ou croqui do terreno.</p><div class="chips"><span class="chip">1 a 12 furos</span><span class="chip">10,45 m a 50 m</span></div></div></li>
+          <li><div><h3>Resumo e estimativa</h3><p>Revise tudo, veja o custo estimado e envie. Os prestadores próximos passam a ver o pedido.</p></div></li>
+        </ol>
+      </div>
+      <div class="phone-col">
+        <div class="phone" role="img" aria-label="Tela inicial do app do cliente: saudação, banner, busca de cidade, mapa com pino e botão Solicitar serviços">
+          <div class="screen">
+            <div class="sb"><span>9:41</span><span>5G ▮▮▮</span></div>
+            <div class="ab"><b>Olá, Marina!</b><span class="bell"><svg><use href="#i-bell"/></svg><i>2</i></span></div>
+            <div class="scr-body">
+              <div class="banner"><small>SPT Pro</small><p>Sondagem SPT na sua obra, sem ligar para ninguém.</p></div>
+              <div class="city"><svg><use href="#i-search"/></svg>João Pessoa, PB</div>
+              <div class="map"><span class="pin"><svg><use href="#i-pin"/></svg></span></div>
+              <div class="req">Solicitar serviços</div>
+            </div>
+            <div class="tabs">
+              <span class="on"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 10.5L12 4l8 6.5V20h-5.5v-5h-5v5H4z"/></svg>Início</span>
+              <span><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 7.5V12l3 2"/></g></svg>Serviços</span>
+              <span><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c1.2-3.6 4-5.2 7-5.2s5.8 1.6 7 5.2"/></g></svg>Perfil</span>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">Tela inicial do cliente</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt" id="prestadores" aria-labelledby="h-prest">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Para empresas de sondagem</span>
+        <h2 id="h-prest">Mais pedidos perto da sua equipe, com a papelada em dia</h2>
+        <p class="lead">Só empresas com documentação completa enviam propostas. Isso dá segurança ao cliente e valoriza quem trabalha regularizado.</p>
+      </div>
+      <div class="grid3">
+        <article class="feat">
+          <span class="ic"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg></span>
+          <h3>Pedidos próximos</h3>
+          <p>A partir da sua localização, o app lista os pedidos abertos num raio de 200 km.</p>
+        </article>
+        <article class="feat">
+          <span class="ic"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5"/></svg></span>
+          <h3>Proposta em poucos toques</h3>
+          <p>Escolha a sub-equipe que vai a campo, a data e o horário. O valor sai da simulação do pedido.</p>
+        </article>
+        <article class="feat">
+          <span class="ic"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></g></svg></span>
+          <h3>Recebimento via Stripe Connect</h3>
+          <p>Conecte sua conta uma vez. O pagamento do cliente cai direto para a empresa, já descontada a taxa da plataforma.</p>
+        </article>
+        <article class="feat">
+          <span class="ic"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19c.8-3 3.2-4.5 6-4.5s5.2 1.5 6 4.5M15 14.6c2.6-.3 4.8 1 5.6 3.4"/></g></svg></span>
+          <h3>Funcionários e sub-equipes</h3>
+          <p>Cadastre a equipe de campo e monte sub-equipes identificadas por cor. Cada proposta é de uma sub-equipe.</p>
+        </article>
+        <article class="feat">
+          <span class="ic"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></g></svg></span>
+          <h3>Painel da empresa</h3>
+          <p>Receita líquida, percentual de serviços por UF e contadores de pedidos abertos, totais e em disputa.</p>
+        </article>
+        <article class="feat">
+          <span class="ic"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4" stroke-linecap="round"/></g></svg></span>
+          <h3>Entrega da ART</h3>
+          <p>Ao concluir o ensaio, envie a ART pelo app. O cliente é avisado e o pedido é finalizado.</p>
+        </article>
+      </div>
+
+      <div class="docs">
+        <div>
+          <h3>Habilitação em 6 etapas</h3>
+          <p>O cadastro da empresa reúne dados, endereço e 11 documentos em PDF. A conta é liberada para propostas quando tudo estiver validado.</p>
+        </div>
+        <div class="doc-steps">
+          <div class="ds"><span class="n">Etapa 1</span><b>Dados da empresa</b><small>Razão social, UFs de atuação, CNPJ e telefone</small></div>
+          <div class="ds"><span class="n">Etapa 2</span><b>Endereço</b><small>Sede da empresa, com preenchimento por localização</small></div>
+          <div class="ds"><span class="n">Etapa 3 · 3 PDFs</span><b>Jurídico</b><small>Inscrição municipal, ato constitutivo e documento de identidade</small></div>
+          <div class="ds"><span class="n">Etapa 4 · 1 PDF</span><b>Trabalhista</b><small>Certidão de inexistência de débitos trabalhistas</small></div>
+          <div class="ds"><span class="n">Etapa 5 · 2 PDFs</span><b>CREA</b><small>Certidões da empresa e do responsável técnico</small></div>
+          <div class="ds"><span class="n">Etapa 6 · 5 PDFs</span><b>Econômico-financeiro</b><small>Falência, FGTS e CNDs municipal, estadual e federal</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="clientes" aria-labelledby="h-cli">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Para clientes</span>
+        <h2 id="h-cli">Contrate a sondagem com segurança e sem ligar para ninguém</h2>
+        <p class="lead">Você descreve o terreno uma vez e recebe propostas de empresas verificadas. Escolhe, paga e acompanha tudo pelo celular.</p>
+      </div>
+      <div class="grid3">
+        <article class="feat cli">
+          <span class="ic"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4" stroke-linecap="round"/></g></svg></span>
+          <h3>Empresas verificadas</h3>
+          <p>Só enviam propostas empresas com documentação jurídica, trabalhista, fiscal e do CREA em dia.</p>
+        </article>
+        <article class="feat cli">
+          <span class="ic"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h10M4 17h7"/><circle cx="18" cy="16" r="3"/></g></svg></span>
+          <h3>Estimativa antes de pedir</h3>
+          <p>Ao final do pedido o app mostra o custo estimado do serviço, para você planejar a obra antes de receber propostas.</p>
+        </article>
+        <article class="feat cli">
+          <span class="ic"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="8" height="16" rx="2"/><rect x="13" y="4" width="8" height="16" rx="2"/></g></svg></span>
+          <h3>Propostas lado a lado</h3>
+          <p>Compare empresa, equipe, data proposta, distância até o terreno e valor total antes de aceitar.</p>
+        </article>
+        <article class="feat cli">
+          <span class="ic"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></g></svg></span>
+          <h3>Pagamento pelo app</h3>
+          <p>Cartão de crédito em até 12 vezes, com seus cartões salvos para os próximos pedidos.</p>
+        </article>
+        <article class="feat cli">
+          <span class="ic"><svg viewBox="0 0 24 24"><use href="#i-bell"/></svg></span>
+          <h3>Aviso a cada etapa</h3>
+          <p>Você é notificado quando chega uma proposta, quando o pagamento é confirmado e quando a equipe sai para o local.</p>
+        </article>
+        <article class="feat cli">
+          <span class="ic"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5"/></svg></span>
+          <h3>ART e histórico guardados</h3>
+          <p>A ART chega pelo app ao fim do serviço, e seus pedidos e pagamentos ficam registrados na conta.</p>
+        </article>
+      </div>
+
+      <div class="docs">
+        <div>
+          <h3>O que vem em cada proposta</h3>
+          <p>Antes de aceitar, você vê quem vai executar, quando e quanto custa, já com a taxa da plataforma incluída.</p>
+        </div>
+        <article class="prop" aria-label="Exemplo de proposta recebida">
+          <div class="prop-top">
+            <div><span class="prop-ex">Exemplo</span><b>Geotécnica Litoral Sondagens</b><small>Sub-equipe Azul · 3 técnicos</small></div>
+            <span class="prop-tag">Respondida</span>
+          </div>
+          <dl class="prop-rows">
+            <div><dt>Data proposta</dt><dd>14/11 · 07:00</dd></div>
+            <div><dt>Furos</dt><dd>3 × 10,45 m</dd></div>
+            <div><dt>Distância até o terreno</dt><dd>18 km</dd></div>
+            <div><dt>Valor do serviço</dt><dd>R$ 4.200,00</dd></div>
+            <div><dt>Taxa da plataforma</dt><dd>R$ 420,00</dd></div>
+          </dl>
+          <div class="prop-total"><span>Total</span><b>R$ 4.620,00</b><small>ou 12x de R$ 385,00</small></div>
+          <div class="prop-act"><span class="btn btn-outline">Voltar</span><span class="btn btn-fill">Aceitar</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt" id="roadmap" aria-labelledby="h-road">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Roadmap</span>
+        <h2 id="h-road">O que já está no app e o que vem a seguir</h2>
+      </div>
+      <div class="road">
+        <div class="col">
+          <h3>No app hoje <span class="pill ok">disponível</span></h3>
+          <ul>
+            <li>Cadastro e login por e-mail<small>cliente e prestador</small></li>
+            <li>Habilitação da empresa<small>6 etapas, 11 documentos</small></li>
+            <li>Solicitação de sondagem com estimativa<small>6 telas</small></li>
+            <li>Envio e comparação de propostas</li>
+            <li>Pagamento com cartão de crédito<small>até 12x</small></li>
+            <li>Painel da empresa<small>receita e serviços por UF</small></li>
+            <li>Funcionários, sub-equipes e histórico de pagamentos</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Próximas entregas <span class="pill next">em desenvolvimento</span></h3>
+          <ul>
+            <li>Chat entre cliente e prestador<small>com fotos e documentos</small></li>
+            <li>Adicionais de furo e profundidade<small>negociados no chat</small></li>
+            <li>Execução em campo e entrega da ART pelo app</li>
+            <li>Notificações push e avaliação do serviço</li>
+            <li>Pix e cartão de débito</li>
+            <li>Login com Google, Apple e biometria</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="contato">
+    <div class="wrap">
+      <div class="cta">
+        <div>
+          <h2>Precisa de outro tipo de ensaio ou quer levar o SPT Pro para sua empresa?</h2>
+          <p>Fale com o time comercial sobre sondagem rotativa, mista, a trado, em rocha, coleta de amostras e ensaios de laboratório.</p>
+        </div>
+        <div class="mail">
+          <code id="email">comercial@sptpro.com.br</code>
+          <button class="btn" id="copy" type="button">Copiar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 SPT Pro · Marketplace de sondagem SPT</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
